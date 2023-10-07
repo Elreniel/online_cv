@@ -43,7 +43,7 @@ selected_page = option_menu(
             "margin": "0px",
             "--hover-color": "#eee",
         },
-        "nav-link-selected": {"background-color": "red"},
+        "nav-link-selected": {"background-color": "blue"},
     },
 )
 

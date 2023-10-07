@@ -38,7 +38,7 @@ def about_me():
             st.write("Tensorflow-Keras")
             st.write("Pytorch")
             st.write("Huggingface")
-            st.write("Detectron2")
+            st.write("Detectron 2")
         with col12:
             st.write("★ ★ ★ ★ ★")
             st.write("★ ★ ★ ★ ★")

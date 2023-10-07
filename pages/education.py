@@ -10,9 +10,11 @@ def education():
 
         st.subheader("2018 - 2021, Hacettepe University")
         st.write("M.Sc. in Computer Engineering")
+        st.write("Thesis: Estimating Instrumentation Data Acquired During Flight Test of a Helicopter Using Predictor Models")
 
         st.subheader("2012 - 2017, Bilkent University")
         st.write("B.S. Electrical and Electronics Engineering")
+        st.write("Senior Project: Detecting and Tracking Cars from DJI Phantom 3 Drone via NVDIA Jetson TX-1")
 
     with col2:
         education_animation = load_lottiefile("./animations/education.json")
