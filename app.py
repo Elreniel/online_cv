@@ -27,6 +27,7 @@ st.markdown(
 
 with st.columns(3)[1]:
     st.markdown("<h1 style='text-align: center; color: black;'>Barış Coşkun</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; color: black;'>bcoskun1993@gmail.com</h3>", unsafe_allow_html=True)
 
 selected_page = option_menu(
     menu_title=None,
