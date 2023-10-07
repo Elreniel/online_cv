@@ -11,10 +11,12 @@ def about_me():
         st.write("Advance understanding of data analysis and processing")
         st.write("Highly motivated to design algorithms for real-life problems")
         st.write("Motocycle Enthusiast")
+        st.divider()
 
         st.subheader("Publication")
         st.write("[Estimating Instrumentation Data Acquired During Flight Test of a Helicopter Using Predictor Models](https://ieeexplore.ieee.org/document/9535625)")
         st.write("[Predicting Carbon Spectrum in Heteronuclear Single Quantum Coherence Spectroscopy for Online Feedback During Surgery](https://ieeexplore.ieee.org/abstract/document/8730423)")
+        st.divider()
 
         st.subheader("Programming Skills")
         col11, col12 = st.columns(2)
@@ -28,13 +30,14 @@ def about_me():
             st.write("★ ★ ★ ☆ ☆")
             st.write("★ ★ ★ ☆ ☆")
             st.write("★ ★ ★ ☆ ☆")
+        st.divider()
 
         st.subheader("Frameworks")
         col11, col12 = st.columns(2)
         with col11:
             st.write("Numpy")
             st.write("Pandas")
-            st.write("Scikit ")
+            st.write("Scikit Learn")
             st.write("Tensorflow-Keras")
             st.write("Pytorch")
             st.write("Huggingface")
