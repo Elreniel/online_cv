@@ -35,7 +35,7 @@ selected_page = option_menu(
     icons=["person", "pc-display-horizontal", "buildings"],
     orientation="horizontal",
     styles={
-        "container": {"padding": "0!important", "background-color": "#fafafa"},
+        "container": {"padding": "10px 5px!important", "background-color": "#fafafa"},
         "icon": {"color": "black", "font-size": "25px"},
         "nav-link": {
             "font-size": "25px",
