@@ -4,7 +4,7 @@ from pages.about_me import about_me
 from pages.education import education
 from pages.work_experience import work_experience
 
-st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(layout="wide", initial_sidebar_state="collapsed", page_title="Barış Coşkun")
 
 hide_streamlit_style =  """
                         <style>
