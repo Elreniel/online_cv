@@ -1,5 +1,4 @@
 [theme]
 
 backgroundColor = '#ffffff'
-
-secondaryBackgroundColor = '#dedede'
+# secondaryBackgroundColor = '#dedede'

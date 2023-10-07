@@ -25,11 +25,26 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+with st.columns(3)[1]:
+    st.markdown("<h1 style='text-align: center; color: black;'>Barış Coşkun</h1>", unsafe_allow_html=True)
+
 selected_page = option_menu(
     menu_title=None,
     options=["About Me", "Education", "Experience"],
-    icons=["person-circle", "backpack", "buildings"],
-    orientation="horizontal")
+    icons=["person", "pc-display-horizontal", "buildings"],
+    orientation="horizontal",
+    styles={
+        "container": {"padding": "0!important", "background-color": "#fafafa"},
+        "icon": {"color": "black", "font-size": "25px"},
+        "nav-link": {
+            "font-size": "25px",
+            "text-align": "left",
+            "margin": "0px",
+            "--hover-color": "#eee",
+        },
+        "nav-link-selected": {"background-color": "red"},
+    },
+)
 
 if selected_page == "About Me":
     about_me()
