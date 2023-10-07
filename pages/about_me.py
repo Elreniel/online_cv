@@ -10,17 +10,43 @@ def about_me():
         st.write("Data Scientist especially interested in Computer Vision, Predictive Models and Optimization")
         st.write("Advance understanding of data analysis and processing")
         st.write("Highly motivated to design algorithms for real-life problems")
+        st.write("Motocycle Enthusiast")
 
         st.subheader("Publication")
-        st.write("2021, Estimating Instrumentation Data Acquired During Flight Test of a Helicopter Using Predictor Models, IEEE EUROCON")
-        st.write("2019, Predicting Carbon Spectrum in Heteronuclear Single Quantum Coherence Spectroscopy for Online Feedback During Surgey, IEEE/ACM Transactions on Computational Biology and Bioinformatics")
+        st.write("[Estimating Instrumentation Data Acquired During Flight Test of a Helicopter Using Predictor Models](https://ieeexplore.ieee.org/document/9535625)")
+        st.write("[Predicting Carbon Spectrum in Heteronuclear Single Quantum Coherence Spectroscopy for Online Feedback During Surgery](https://ieeexplore.ieee.org/abstract/document/8730423)")
 
         st.subheader("Programming Skills")
-        st.write("Python\tMatLab\tR\tSQL")
+        col11, col12 = st.columns(2)
+        with col11:
+            st.write("Python")
+            st.write("SQL")
+            st.write("R ")
+            st.write("MatLab")
+        with col12:
+            st.write("★ ★ ★ ★ ★")
+            st.write("★ ★ ★ ☆ ☆")
+            st.write("★ ★ ★ ☆ ☆")
+            st.write("★ ★ ★ ☆ ☆")
 
         st.subheader("Frameworks")
-        st.write("Numpy\tPandas\tR\tScikit-Learn")
-        st.write("Tensorflow-Keras\tPytorch\tHuggingface\tDetectron2")
+        col11, col12 = st.columns(2)
+        with col11:
+            st.write("Numpy")
+            st.write("Pandas")
+            st.write("Scikit ")
+            st.write("Tensorflow-Keras")
+            st.write("Pytorch")
+            st.write("Huggingface")
+            st.write("Detectron2")
+        with col12:
+            st.write("★ ★ ★ ★ ★")
+            st.write("★ ★ ★ ★ ★")
+            st.write("★ ★ ★ ★ ★")
+            st.write("★ ★ ★ ★ ☆")
+            st.write("★ ★ ★ ★ ☆")
+            st.write("★ ★ ★ ☆ ☆")
+            st.write("★ ★ ★ ☆ ☆")
 
     with col2:
         about_me_animation = load_lottiefile("./animations/about_me.json")
