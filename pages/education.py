@@ -16,7 +16,7 @@ def education():
         
         st.subheader("2012 - 2017, Bilkent University")
         st.write("B.S. Electrical and Electronics Engineering")
-        st.write("Senior Project: Detecting and Tracking Cars from DJI Phantom 3 Drone via NVDIA Jetson TX-1")
+        st.write("Senior Project: Detecting and Tracking Cars from DJI Phantom 3 Drone via NVIDIA Jetson TX-1")
 
     with col2:
         education_animation = load_lottiefile("./animations/education.json")

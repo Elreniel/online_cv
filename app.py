@@ -26,14 +26,16 @@ st.markdown(
 )
 
 with st.columns(3)[1]:
-    st.title("Barış Coşkun")
+    st.markdown("<h1 style='color:black; font-size:50px; text-align:center;'>Barış Coşkun</h1>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown("<a href='mailto:bcoskun1993@gmail.com' style='color:black;font-size:35px;'>✉</a> ", unsafe_allow_html=True)
+        st.markdown("<a href='mailto:bcoskun1993@gmail.com'><img src='./logos/mail.png' style='width:64px; height:64px'></a>", unsafe_allow_html=True)
+
     with col2:
-        st.markdown("[![Title](https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-48.png)](https://www.linkedin.com/in/bar%C4%B1%C5%9F-co%C5%9Fkun-386b97141)", unsafe_allow_html=True)
+        st.markdown("<a href='https://www.linkedin.com/in/bar%C4%B1%C5%9F-co%C5%9Fkun-386b97141'><img src='logos/linkedin.png' style='width:64px; height:64px'></a>", unsafe_allow_html=True)
+
     with col3:
-        st.markdown("[![Title](https://img.icons8.com/material-outlined/48/000000/github.png)](https://github.com/Elreniel)", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/Elreniel'><img src='logos/github.png' style='width:64px; height:64px'></a>", unsafe_allow_html=True)
 
 selected_page = option_menu(
     menu_title=None,
@@ -45,7 +47,7 @@ selected_page = option_menu(
         "icon": {"color": "black", "font-size": "25px"},
         "nav-link": {
             "font-size": "25px",
-            "text-align": "left",
+            "text-align": "center",
             "margin": "0px",
             "--hover-color": "#eee",
         },

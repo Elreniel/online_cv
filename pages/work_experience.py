@@ -8,15 +8,15 @@ def work_experience():
         st.subheader("October 2022 - Present, Data Scientist - ETIYA")
         st.write("Data Scientist in Akbank Mobile AI Team")
         st.write("Developed computer vision model to detect IBAN text via mobile phone camera")
-        st.write("Developed LLM based (GPT-3.5, Llama (version 1 and 2), Falcon) chatbot for both customers and employees")
+        st.write("Implemented LLM based (GPT-3.5, Llama (version 1 and 2), Falcon) chatbot for both customers and employees")
         st.write("Finetuned different LLM for specific tasks")
         st.write("Use word embedding to search information from any document via LLM")
         st.divider()
 
         st.subheader("August 2021 - October 2022 Data Scientist, orientis.ai")
         st.write("Developed computer vision based solutions for industry needs, especially for automobile industry")
-        st.write("Developed Quality Assurance Box (QAB) for detecting any defect on handbrake in real time")
-        st.write("Developed end-to-end automated product with proper User Interface and Automated Model Finetuning")
+        st.write("Designed Quality Assurance Box (QAB) for detecting any defect on handbrake in real time")
+        st.write("End-to-end automated product with proper User Interface and Model Finetuning")
         st.write("Integrated to production line in the factory, can communicate with other software such as SAP")
         st.divider()
 
