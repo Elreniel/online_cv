@@ -1,3 +1,5 @@
+import os
+import base64
 import streamlit as st
 from streamlit_option_menu import option_menu
 from pages.about_me import about_me
@@ -25,17 +27,36 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+
+def get_img_with_href(local_img_path, target_url):
+    img_format = os.path.splitext(local_img_path)[-1].replace(".", "")
+    bin_str = get_base64_of_bin_file(local_img_path)
+    html_code = f"""
+    <a href="{target_url}">
+            <img src="data:image/{img_format};base64,{bin_str}" style="width:64px; height:64px" />
+        </a>"""
+    return html_code
+
 with st.columns(3)[1]:
     st.markdown("<h1 style='color:black; font-size:50px; text-align:center;'>Barış Coşkun</h1>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown("<a href='mailto:bcoskun1993@gmail.com'><img src='./logos/mail.png' style='width:64px; height:64px'></a>", unsafe_allow_html=True)
+        mail_logo_html = get_img_with_href(os.path.join("logos", "mail.png"), 'mailto:bcoskun1993@gmail.com')
+        st.markdown(mail_logo_html, unsafe_allow_html=True)
 
     with col2:
-        st.markdown("<a href='https://www.linkedin.com/in/bar%C4%B1%C5%9F-co%C5%9Fkun-386b97141'><img src='logos/linkedin.png' style='width:64px; height:64px'></a>", unsafe_allow_html=True)
+        linkedin_logo_html = get_img_with_href(os.path.join("logos", "linkedin.png"), 'https://www.linkedin.com/in/bar%C4%B1%C5%9F-co%C5%9Fkun-386b97141')
+        st.markdown(linkedin_logo_html, unsafe_allow_html=True)
 
     with col3:
-        st.markdown("<a href='https://github.com/Elreniel'><img src='logos/github.png' style='width:64px; height:64px'></a>", unsafe_allow_html=True)
+        github_logo_html = get_img_with_href(os.path.join("logos", "github.png"), 'https://github.com/Elreniel')
+        st.markdown(github_logo_html, unsafe_allow_html=True)
 
 selected_page = option_menu(
     menu_title=None,
