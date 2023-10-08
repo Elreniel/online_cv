@@ -38,11 +38,12 @@ def get_img_with_href(local_img_path, target_url):
     img_format = os.path.splitext(local_img_path)[-1].replace(".", "")
     bin_str = get_base64_of_bin_file(local_img_path)
     html_code = f"""
-    <div style="text-align: center;">
-    <a href="{target_url}">
-    <img src="data:image/{img_format};base64,{bin_str}" style="width:64px; height:64px" />
-    </a>
+    <div style="text-align: center; padding-bottom:15px;">
+        <a href="{target_url}">
+        <img src="data:image/{img_format};base64,{bin_str}" style="width:64px; height:64px" />
+        </a>
     </div>"""
+
     return html_code
 
 
@@ -67,7 +68,7 @@ selected_page = option_menu(
     icons=["person", "pc-display-horizontal", "buildings"],
     orientation="horizontal",
     styles={
-        "container": {"padding": "10px 5px!important", "background-color": "#fafafa"},
+        "container": {"padding": "0px!important", "background-color": "#fafafa"},
         "icon": {"color": "black", "font-size": "25px"},
         "nav-link": {
             "font-size": "25px",
