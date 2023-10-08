@@ -24,5 +24,5 @@ def detection():
             xmin, ymin, xmax, ymax = tempDetection["box"]["xmin"], tempDetection["box"]["ymin"], tempDetection["box"]["xmax"], tempDetection["box"]["ymax"]
             draw.rectangle(((xmin, ymin), (xmax, ymax)), outline="black")
             text = f"Class: {tempDetection['label']}, Score: {tempDetection['score']}"
-            draw.text((xmin, ymin), text, font=ImageFont.truetype("arial"), fill="black")
+            draw.text((xmin, ymin), text, fill="black")
         st.image(source_img, use_column_width="always")
