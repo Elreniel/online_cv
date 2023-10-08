@@ -5,10 +5,8 @@ from streamlit_option_menu import option_menu
 from pages.about_me import about_me
 from pages.education import education
 from pages.work_experience import work_experience
-from pages.stable_diffusion import stable_diffusion
-from pages.text_generation import text_generation
-from pages.chatbot import chatbot
-from pages.detection import detection
+from pages.projects import projects
+
 
 st.set_page_config(layout="wide", initial_sidebar_state="collapsed", page_title="Barış Coşkun")
 
@@ -69,7 +67,7 @@ with st.columns(3)[1]:
 selected_page = option_menu(
     menu_title=None,
     options=["About Me", "Education", "Experience", "Projects"],
-    icons=["person", "pc-display-horizontal", "buildings", "buildings"],
+    icons=["person", "pc-display-horizontal", "buildings", "file-code"],
     orientation="horizontal",
     styles={
         "container": {"padding": "0px!important", "background-color": "#fafafa"},
@@ -91,16 +89,5 @@ elif selected_page == "Education":
 elif selected_page == "Experience":
     work_experience()
 elif selected_page == "Projects":
-    selected_project = st.selectbox(
-        'Please select a project for demo?',
-        ("Chatbot", 'Stable Diffusion', "Detection"))
-
-    if selected_project == "Stable Diffusion":
-        stable_diffusion()
-    elif selected_project == "Text Completion":
-        text_generation()
-    elif selected_project == "Chatbot":
-        chatbot()
-    elif selected_project == "Detection":
-        detection()
+    projects()
 
