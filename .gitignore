@@ -3,8 +3,8 @@
 
 #Custom
 .streamlit/secrets.toml
-.demo.py
-.demo.jpg
+demo.py
+demo.jpg
 .idea
 
 ### Python ###

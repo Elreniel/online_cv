@@ -3,7 +3,7 @@ import streamlit as st
 import io
 from PIL import Image
 
-API_URL = API_URL = st.secrets['STABLE_DIFFUSION_ENDPOINT']
+API_URL = st.secrets['STABLE_DIFFUSION_ENDPOINT']
 headers = {"Authorization": f"Bearer {st.secrets['HUGGINGFACE_TOKEN']}"}
 
 
