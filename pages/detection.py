@@ -1,14 +1,12 @@
 import requests
 import streamlit as st
-from PIL import Image, ImageFont, ImageDraw
+from PIL import Image, ImageDraw
 
 API_URL = API_URL = st.secrets['DETECTION_ENDPOINT']
 headers = {"Authorization": f"Bearer {st.secrets['HUGGINGFACE_TOKEN']}"}
 
 
 def query(uploaded_file):
-    # with open(filename, "rb") as f:
-    #     data = f.read()
     response = requests.post(API_URL, headers=headers, data=uploaded_file)
     return response.json()
 

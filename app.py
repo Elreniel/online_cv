@@ -93,7 +93,7 @@ elif selected_page == "Experience":
 elif selected_page == "Projects":
     selected_project = st.selectbox(
         'Please select a project for demo?',
-        ("Chatbot", 'Stable Diffusion', "Detection", "Text Completion"))
+        ("Chatbot", 'Stable Diffusion', "Detection"))
 
     if selected_project == "Stable Diffusion":
         stable_diffusion()
