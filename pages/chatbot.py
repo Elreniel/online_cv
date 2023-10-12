@@ -29,9 +29,12 @@ def chatbot():
             with st.spinner("Wait for it..."):
                 message_placeholder = st.empty()
                 full_response = ""
-                assistant_response = query({"inputs":
-                                                {"question": question,
-                                                 "context": CONTEXT}})["answer"]
+                try:
+                    assistant_response = query({"inputs":
+                                                    {"question": question,
+                                                     "context": CONTEXT}})["answer"]
+                except:
+                    assistant_response = "Something went wrong with API. Please try again later."
             for chunk in assistant_response.split():
                 full_response += chunk + " "
                 message_placeholder.markdown(full_response + "▌")

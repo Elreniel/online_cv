@@ -16,6 +16,9 @@ def stable_diffusion():
 	prompt = st.text_input("Enter a prompt to generate a picture")
 	if prompt:
 		with st.spinner('Wait for it...'):
-			image_bytes = query({"inputs": prompt})
-			generated_image = Image.open(io.BytesIO(image_bytes))
-		st.image(generated_image, caption=prompt, use_column_width="always")
+			try:
+				image_bytes = query({"inputs": prompt})
+				generated_image = Image.open(io.BytesIO(image_bytes))
+				st.image(generated_image, caption=prompt, use_column_width="always")
+			except:
+				st.write("Something went wrong with API. Please try again later.")
