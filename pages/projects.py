@@ -6,7 +6,7 @@ from pages.detection import detection
 
 
 def projects():
-    st.write("These are sample demonstrations of my professional projects. Due to the hardware requirements of models, I am using simple APIs instead. However, in my professional projects, I am using more complex models with custom implementations")
+    st.write("These are sample demonstrations of my professional projects. Due to the hardware requirements of models, I am using simple APIs instead. However, in my professional projects, I am using more complex models with custom implementations.")
 
     selected_project = st.selectbox(
         'Please select a project for demo?',
